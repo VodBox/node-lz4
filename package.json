@@ -54,6 +54,7 @@
   "scripts": {
     "test": "mocha",
     "install": "node-gyp rebuild",
-    "prepublish": "./build.sh"
+    "prepublish": "./build.sh",
+    "preinstall": "git init && git submodule update -i -r"
   }
 }
